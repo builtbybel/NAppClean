@@ -7,7 +7,7 @@ Source: "[Remove Default Microsoft Store Packages](https://patchmypc.com/blog/re
 Great news but limited. No custom rules, no third-party cleanup, limited UI
 So heres NAppClean, the smallest possible UI tool that does more than what Microsofts policy currently offers
 
-![NAppClean_dWMq2lrGUB](https://github.com/user-attachments/assets/3954ae91-c7b8-4cf2-be6b-482d9d00eae5)
+![NAppClean_BfWl7ouPfq](https://github.com/user-attachments/assets/4633ffd6-28e2-4ec5-af1c-8afb25f673ef)
 
 **What It Does**
 - Reads from PolicyPatterns.txt (or falls back to Plugins/CFEnhancer.txt)
