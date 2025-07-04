@@ -1,4 +1,4 @@
-# NAppClean
+# NAppClean (Native App Cleanup)
 This tool started as an internal helper module embedded inside my main platform, [CrapFixer](https://github.com/builtbybel/CrapFixer) but it's now fully standalone. 
 
 Every time you deploy a Windows device, the bloat strikes again. Tired of running PowerShell scripts just to keep your endpoints clean?
