@@ -10,7 +10,7 @@ So heres NAppClean, the smallest possible UI tool that does more than what Micro
 ![NAppClean_Dj7MYLLThp](https://github.com/user-attachments/assets/872fa8a6-fa54-4adb-8f8d-5a702859034a)
 
 **What It Does**
-- Reads from PolicyPatterns.txt (or falls back to Plugins/CFEnhancer.txt)
+- Reads from PolicyPatterns.txt (or falls back to [CrapFixer](https://github.com/builtbybel/CrapFixer)\Plugins/CFEnhancer.txt)
 -  Uninstalls pre-installed UWP apps based on match patterns
 -  Supports pattern-based whitelisting
 -   Can even detect all installed apps using wildcard *
