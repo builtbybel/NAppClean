@@ -11,11 +11,11 @@ So heres NAppClean, the smallest possible UI tool that does more than what Micro
 
 **What It Does**
 - Reads from PolicyPatterns.txt (or falls back to [CrapFixer](https://github.com/builtbybel/CrapFixer)\Plugins\CFEnhancer.txt)
--  Uninstalls pre-installed UWP apps based on match patterns
--  Supports pattern-based whitelisting
--   Can even detect all installed apps using wildcard *
--   Extendable to third-party packages — you control what gets zapped
--   GUI inspired by Group Policy Editor, but smaller than any built-in tool
+- Uninstalls pre-installed Microsoft Store apps based on match patterns
+- Supports pattern-based whitelisting
+- Can even detect all installed apps using wildcard *
+- Extendable to third-party packages — you control what gets zapped
+- GUI inspired by Group Policy Editor, but smaller than any built-in tool
 
 **Perfect for lightweight scenarios like**
 - Intune / Autopilot post-deployment
