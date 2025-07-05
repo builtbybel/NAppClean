@@ -4,10 +4,10 @@ This tool started as an internal helper module embedded inside my main platform,
 Every time you deploy a Windows device, the bloat strikes again. Tired of running PowerShell scripts just to keep your endpoints clean?
 Microsoft is finally rolling out a native policy in Windows 11 25H2:
 Source: "[Remove Default Microsoft Store Packages](https://patchmypc.com/blog/remove-default-microsoft-store-packages/)"
-Great news but limited. No custom rules, no third-party cleanup, limited UI
+Great news but limited. No custom rules, no third-party cleanup, limited UI.
 So heres NAppClean, the smallest possible UI tool that does more than what Microsofts policy currently offers
 
-![NAppClean_BfWl7ouPfq](https://github.com/user-attachments/assets/4633ffd6-28e2-4ec5-af1c-8afb25f673ef)
+![NAppClean_Dj7MYLLThp](https://github.com/user-attachments/assets/872fa8a6-fa54-4adb-8f8d-5a702859034a)
 
 **What It Does**
 - Reads from PolicyPatterns.txt (or falls back to Plugins/CFEnhancer.txt)
