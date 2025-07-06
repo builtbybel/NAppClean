@@ -1,7 +1,7 @@
 # NAppClean (Native App Cleanup)
 This tool started as an internal helper module embedded inside my main platform, [CrapFixer](https://github.com/builtbybel/CrapFixer) but it's now fully standalone. 
 
-It is inspired by the upcoming Microsoft Group Policy in Windows 11 25H2 — Remove Default Microsoft Store Packages. That native policy (first seen in Insider Dev 25H2) lets you uninstall select inbox apps during new user profile creation, no scripts required. Source: "[Remove Default Microsoft Store Packages](https://patchmypc.com/blog/remove-default-microsoft-store-packages/)"
+It is inspired by the upcoming Microsoft Group Policy in Windows 11 25H2 — Remove Default Microsoft Store Packages. That native policy (first seen in Insider Dev 25H2) lets you uninstall select inbox apps during new user profile creation, no scripts required. Source: https://oofhours.com/2025/06/28/a-policy-to-remove-windows-apps
 
 Every time you deploy a Windows device, the bloat strikes again. Tired of running PowerShell scripts just to keep your endpoints clean?
 Microsoft is finally rolling out a native policy in Windows 11 25H2.
