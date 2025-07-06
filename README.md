@@ -8,7 +8,7 @@ Microsoft is finally rolling out a native policy in Windows 11 25H2.
 Great news but limited. No custom rules, no third-party cleanup, limited UI. The MS 25H2 GPO only covers key first-party apps (Photos, Solitaire etc.). NAppClean gives admins full control — remove whatever you want, whenever you want, with zero installation fuss.
 So heres NAppClean, the smallest possible UI tool that does more than what Microsofts policy currently offers
 
-![NAppClean_Dj7MYLLThp](https://github.com/user-attachments/assets/872fa8a6-fa54-4adb-8f8d-5a702859034a)
+![NAppClean_fwUUGzTZ0z](https://github.com/user-attachments/assets/12937bd3-3817-4175-9d85-fd8c58a93c1a)
 
  ### 🧰 What NAppClean Does Better
 
