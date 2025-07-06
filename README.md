@@ -23,7 +23,11 @@ So heres NAppClean, the smallest possible UI tool that does more than what Micro
 - Build-tag filters in PolicyPatterns.txt
 - Custom admin images
 - Manual cleanup with visual feedback
-- Cloud-synced presets + AI-recommendations (coming)
 - Integration into CrapFixer as standalone module
+
+- 🔜 Roadmap
+- Intune / Autopilot hooks
+- Cloud-synced presets + AI-recommendations
+
 
 
