@@ -25,7 +25,7 @@ So heres NAppClean, the smallest possible UI tool that does more than what Micro
 - Manual cleanup with visual feedback
 - Integration into CrapFixer as standalone module
 
-- 🔜 Roadmap
+# 🔜 Roadmap
 - Intune / Autopilot hooks
 - Cloud-synced presets + AI-recommendations
 
