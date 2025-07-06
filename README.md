@@ -10,13 +10,18 @@ So heres NAppClean, the smallest possible UI tool that does more than what Micro
 
 ![NAppClean_Dj7MYLLThp](https://github.com/user-attachments/assets/872fa8a6-fa54-4adb-8f8d-5a702859034a)
 
-**What It Does**
-- Reads from PolicyPatterns.txt (or falls back to [CrapFixer](https://github.com/builtbybel/CrapFixer)\Plugins\CFEnhancer.txt)
-- Uninstalls pre-installed Microsoft Store apps based on match patterns
-- Supports pattern-based whitelisting
-- Can even detect all installed apps using wildcard *
-- Extendable to third-party packages — you control what gets zapped
-- GUI inspired by Group Policy Editor, but smaller than any built-in tool
+ ### 🧰 What NAppClean Does Better
+
+| Feature                      | MS 25H2 GPO ✅ | NAppClean 🚀 |
+|-----------------------------|:--------------:|:------------:|
+| Native UI                   | ✅             | ✅ *(mimics GPEdit style)* |
+| Pattern-based removal       | ❌             | ✅ via `PolicyPatterns.txt` or falls back to [CrapFixer](https://github.com/builtbybel/CrapFixer) |
+| Whitelisting                | ❌             | ✅ with `!AppName` syntax |
+| Third-party app support     | ❌             | ✅ Full support |
+| Wildcard (`*`) removal      | ❌             | ✅ Optional |
+| Standalone app              | ❌             | ✅ ~<50 KB exe |
+| Regex / tags / automation   | ❌             | 🧪 *Coming soon* |
+
 
 **Perfect for lightweight scenarios like**
 - Intune / Autopilot post-deployment
