@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50CA0D4D-45AD-4E03-BFC5-64FFF4CDA36C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NAppClean</RootNamespace>
+    <AssemblyName>NAppClean</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Windows">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral\Annotated\Windows.winmd</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppControlView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppControlView.Designer.cs">
+      <DependentUpon>AppControlView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\FeatureBase.cs" />
+    <Compile Include="Features\FeatureLoader.cs" />
+    <Compile Include="Features\FeatureManager.cs" />
+    <Compile Include="Features\FeatureNode.cs" />
+    <Compile Include="Features\Ads\FileExlorerAds.cs" />
+    <Compile Include="Features\Ads\FinishSetupAds.cs" />
+    <Compile Include="Features\Ads\LockScreenAds.cs" />
+    <Compile Include="Features\Ads\PersonalizedAds.cs" />
+    <Compile Include="Features\Ads\SettingsAds.cs" />
+    <Compile Include="Features\Ads\StartmenuAds.cs" />
+    <Compile Include="Features\Ads\TailoredExperiences.cs" />
+    <Compile Include="Features\Ads\TipsAndSuggestions.cs" />
+    <Compile Include="Features\Ads\WelcomeExperienceAds.cs" />
+    <Compile Include="Features\AI\ClickToDo.cs" />
+    <Compile Include="Features\AI\CopilotTaskbar.cs" />
+    <Compile Include="Features\AI\Recall.cs" />
+    <Compile Include="Features\Edge\BrowserSignin.cs" />
+    <Compile Include="Features\Edge\DefaultTopSites.cs" />
+    <Compile Include="Features\Edge\DefautBrowserSetting.cs" />
+    <Compile Include="Features\Edge\EdgeCollections.cs" />
+    <Compile Include="Features\Edge\EdgeShoppingAssistant.cs" />
+    <Compile Include="Features\Edge\FirstRunExperience.cs" />
+    <Compile Include="Features\Edge\GamerMode.cs" />
+    <Compile Include="Features\Edge\HubsSidebar.cs" />
+    <Compile Include="Features\Edge\ImportOnEachLaunch.cs" />
+    <Compile Include="Features\Edge\StartupBoost.cs" />
+    <Compile Include="Features\Edge\TabPageQuickLinks.cs" />
+    <Compile Include="Features\Edge\UserFeedback.cs" />
+    <Compile Include="Features\Gaming\GameDVR.cs" />
+    <Compile Include="Features\Gaming\PowerThrotteling.cs" />
+    <Compile Include="Features\Gaming\VisualFX.cs" />
+    <Compile Include="Features\Issues\BasicCleanup.cs" />
+    <Compile Include="Features\Issues\WingetUpgrade.cs" />
+    <Compile Include="Features\Privacy\ActivityHistory.cs" />
+    <Compile Include="Features\Privacy\LocationTracking.cs" />
+    <Compile Include="Features\Privacy\PrivacyExperience.cs" />
+    <Compile Include="Features\Privacy\Telemetry.cs" />
+    <Compile Include="Features\System\BSODDetails.cs" />
+    <Compile Include="Features\System\Hibernation.cs" />
+    <Compile Include="Features\System\MenuShowDelay.cs" />
+    <Compile Include="Features\System\NetworkThrottling.cs" />
+    <Compile Include="Features\System\SpeedUpShutdown.cs" />
+    <Compile Include="Features\System\SystemResponsiveness.cs" />
+    <Compile Include="Features\System\TaskbarEndTask.cs" />
+    <Compile Include="Features\System\VerboseStatus.cs" />
+    <Compile Include="Features\UI\BingSearch.cs" />
+    <Compile Include="Features\UI\DarkMode.cs" />
+    <Compile Include="Features\UI\FullContextMenus.cs" />
+    <Compile Include="Features\UI\WLockScreen.cs" />
+    <Compile Include="Features\UI\SearchBoxSuggestions.cs" />
+    <Compile Include="Features\UI\SearchboxTaskbarMode.cs" />
+    <Compile Include="Features\UI\ShowOrHideMostUsedApps.cs" />
+    <Compile Include="Features\UI\ShowTaskViewButton.cs" />
+    <Compile Include="Features\UI\SnapAssistFlyout.cs" />
+    <Compile Include="Features\UI\StartLayout.cs" />
+    <Compile Include="Features\UI\TaskbarAlignment.cs" />
+    <Compile Include="Features\UI\Transparency.cs" />
+    <Compile Include="FixerControlView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FixerControlView.Designer.cs">
+      <DependentUpon>FixerControlView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\Logger.cs" />
+    <Compile Include="IRefreshableView.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helper\Utils.cs" />
+    <Compile Include="UiContext.cs" />
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppControlView.resx">
+      <DependentUpon>AppControlView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FixerControlView.resx">
+      <DependentUpon>FixerControlView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AppIcon24.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
